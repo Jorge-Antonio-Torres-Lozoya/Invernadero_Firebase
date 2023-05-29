@@ -3,7 +3,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useContext, useEffect, useState } from "react";
 // import { firebaseConfig } from "../config/firebase";
-import "../styles/Home.css";
+import "../styles/home.css";
 import { NavLink } from "react-router-dom";
 import { useDataContext } from "../context/DataContext";
 
