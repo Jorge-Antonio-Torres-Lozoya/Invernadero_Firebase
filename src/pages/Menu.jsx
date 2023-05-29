@@ -27,12 +27,12 @@ const Menu = () => {
   };
   const handleClickTierra = () => {
     setShowContentTierra(!showContentTierra);
-    console.log(context.tierra);
+    // console.log(context.tierra);
   };
   const handleClickProximity = () => {
     setShowContentProximity(!showContentProximity);
    
-    console.log( context.proximity.substring(1, 3))// Imprimirá "10"
+    // console.log( context.proximity.substring(1, 3))// Imprimirá "10"
   };
 
 

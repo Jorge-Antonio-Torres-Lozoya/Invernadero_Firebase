@@ -5,11 +5,11 @@ import React, { useContext, useEffect, useState } from "react";
 // import { firebaseConfig } from "../config/firebase";
 import "../styles/home.css";
 import { NavLink } from "react-router-dom";
-import { useDataContext } from "../context/DataContext";
+// import { useDataContext } from "../context/DataContext";
 
 const Home = () => {
-  const context = useDataContext();
-  console.log(context.proximity);
+  // const context = useDataContext();
+  // console.log(context.proximity);
   return (
   <>
       <div className=" d-flex justify-content-center ">
