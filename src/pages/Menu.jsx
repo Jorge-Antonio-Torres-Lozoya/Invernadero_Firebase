@@ -98,7 +98,9 @@ const Menu = () => {
            {
           showContentLuz &&
           <>
-          <h3 className="text-center fw-bold">{ context.ldr.replace(/"/g, "") === "0" ? "La luz está encendida" : "La luz está apagada"}</h3>
+          <div className="background-fondo">
+          <h3 className="text-center fw-bold mb-0 py-2  text-white">{ context.ldr.replace(/"/g, "") === "0" ? "La luz está encendida" : "La luz está apagada"}</h3>
+          </div>
          
           </>
 
@@ -106,15 +108,18 @@ const Menu = () => {
            {
           showContentTierra &&
           <>
-          <h3 className="text-center fw-bold">{context.tierra == 1 ? "Le falta agua a tu planta, riegala" :"Tu planta tiene agua suficiente"}</h3>
-         
+          <div className="background-fondo">
+          <h3 className="text-center fw-bold py-2 mb-0  text-white">{context.tierra == 1 ? "Le falta agua a tu planta, riégala" :"Tu planta tiene agua suficiente"}</h3>
+          </div>
           </>
         }
 
 {
           showContentProximity &&
           <>
-          <h3 className="text-center fw-bold">{context.proximity.substring(1, 3) > 6 ? "Falata agua en el tanque, favor de llenar" :" Tanque con suficiente agua "}</h3>
+           <div className="background-fondo">
+          <h3 className="text-center fw-bold py-2 text-white mb-0">{context.proximity.substring(1, 3) > 6 ? "Falta de agua en el tanque, favor de llenar" :" Tanque con suficiente agua "}</h3>
+          </div>
           </>
         }
         </div>
